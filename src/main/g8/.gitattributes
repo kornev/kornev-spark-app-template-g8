@@ -1,0 +1,23 @@
+# -*- mode: gitattributes -*-
+
+# fallback on built-in heuristics
+# this must be first so later entries will override it
+* text=auto
+
+# check out text files with LF, not CRLF, on Windows.  (especially
+# important for Scala source files, since """ preserves line endings)
+text eol=lf
+
+# These files are text and should be normalized (convert CRLF => LF)
+*.java   eol=lf
+*.sbt    eol=lf
+*.scala  eol=lf
+*.sh     eol=lf
+*.xml    eol=lf
+
+# Some sbt launcher scripts can't handle CR in .jvmopts
+.jvmopts eol=lf
+
+# Some binary file types for completeness
+# (binary is a macro for -text -diff)
+*.jar    binary
