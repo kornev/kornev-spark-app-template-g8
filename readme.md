@@ -2,9 +2,9 @@
 
 This is a [Giter8][g8] template for Apache Spark.
 
-Using `sbt`, do:
+To apply a template, you can use a git repository full name:
 ```
-sbt new kornev/kornev-spark-app-template-g8
+g8 git://github.com/kornev/kornev-spark-app-template-g8.git
 ```
 in the folder where you want to clone the template.
 
